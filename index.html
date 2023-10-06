@@ -5,22 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Portofolio Saya</title>
+    <!-- Tautan ke file CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Tautan ke file JavaScript Bootstrap (optional, untuk beberapa komponen) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Portofolio Saya</h1>
     </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portofolio Saya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </nav>      
     <section class="portfolio">
-        <div class="project">
-            <img src="project1.jpg" alt="Proyek 1">
-            <h2>Proyek Pertama</h2>
-            <p>Deskripsi proyek pertama Anda.</p>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Proyek 2">
-            <h2>Proyek Kedua</h2>
-            <p>Deskripsi proyek kedua Anda.</p>
-        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="project1.jpg" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyek Pertama</h5>
+              <p class="card-text">Deskripsi proyek pertama Anda.</p>
+              <a href="#" class="btn btn-primary">Detail</a>
+            </div>
+          </div>
     </section>
     <footer>
         <p>&copy; 2023 Nama Anda</p>
